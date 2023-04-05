@@ -72,7 +72,7 @@ for indicator in indicators:
         fig.add_trace(go.Scatter(x=data.index, y=data['EMA'], mode='lines', line=dict(color='red'), name='EMA'))
     if indicator == 'BBANDS':
         fig.add_trace(go.Scatter(x=data.index, y=data['BBANDS_upperband'], mode='lines', line=dict(color='green'), name='Upper Band'))
-        fig.add_trace(go.Scatter(x=data.index, y=data['BBANDS_middleband'], mode='lines', line=dict(color='white'), name='Middle Band'))
+        fig.add_trace(go.Scatter(x=data.index, y=data['BBANDS_middleband'], mode='lines', line=dict(color='gray'), name='Middle Band'))
         fig.add_trace(go.Scatter(x=data.index, y=data['BBANDS_lowerband'], mode='lines', line=dict(color='red'), name='Lower Band'))
     if indicator == 'MACD':
         fig.add_trace(go.Scatter(x=data.index, y=data['MACD'], mode='lines', line=dict(color='blue'), name='MACD'))
@@ -84,7 +84,7 @@ for indicator in indicators:
     if indicator == 'CCI':
         fig.add_trace(go.Scatter(x=data.index, y=data['CCI'], mode='lines', line=dict(color='green'), name='CCI'))
     if indicator == 'CMO':
-        fig.add_trace(go.Scatter(x=data.index, y=data['CMO'], mode='lines', line=dict(color='white'), name='CMO'))
+        fig.add_trace(go.Scatter(x=data.index, y=data['CMO'], mode='lines', line=dict(color='gray'), name='CMO'))
     if indicator == 'DX':
         fig.add_trace(go.Scatter(x=data.index, y=data['DX'], mode='lines', line=dict(color='aqua'), name='DX'))
     if indicator == 'MFI':
@@ -110,7 +110,7 @@ for indicator in indicators:
     if indicator == 'ROCR100':
         fig.add_trace(go.Scatter(x=data.index, y=data['ROCR100'], mode='lines', line=dict(color='blue'), name='ROCR100'))
     if indicator == 'RSI':
-        fig.add_trace(go.Scatter(x=data.index, y=data['RSI'], mode='lines', line=dict(color='white'), name='RSI'))
+        fig.add_trace(go.Scatter(x=data.index, y=data['RSI'], mode='lines', line=dict(color='gray'), name='RSI'))
     if indicator == 'STOCH':
         fig.add_trace(go.Scatter(x=data.index, y=data['STOCH_slowk'], mode='lines', line=dict(color='blue'), name='STOCH_slowk'))
         fig.add_trace(go.Scatter(x=data.index, y=data['STOCH_slowd'], mode='lines', line=dict(color='red'), name='STOCH_slowd'))
