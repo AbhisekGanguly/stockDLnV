@@ -175,5 +175,6 @@ with news_data:
 # Using prophet to predict stock price
 with predictions:
     st.header("Next 30 Days Predictions")
+    st.subheader("Please be patient as a neural network is processing the data for you...")
     predict = predict_stock(ticker)
     st.write(predict)
